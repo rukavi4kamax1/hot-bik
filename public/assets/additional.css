@@ -1,0 +1,40 @@
+.admin_section {
+    background-color: #c7b299;
+}
+.admin {
+    padding: 40px 0;
+}
+.admin_content {
+    border: 1px solid #a79279;
+    padding: 10px;
+}
+.crumbs_button, .crumbs .path {
+    padding: 10px;
+    font-size: 18px;
+}
+.crumbs .path {
+    border: 1px solid #a79279;
+    background-color: #e3dad0;
+    flex-grow: 2;
+}
+.crumbs {
+    align-content: center;
+}
+.admin_table {
+    flex-grow: 2;
+    margin-top: 10px;
+    border-spacing: 0px;
+}
+.admin_table td {
+    padding: 10px;
+}
+.admin_table thead {
+    background-color: #232323;
+    color: white;
+}
+.admin_table tbody tr:nth-child(2n) {
+    background-color: #a79279;
+}
+.admin_table_directory {
+    text-decoration: underline;
+}

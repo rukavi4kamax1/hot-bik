@@ -1,0 +1,362 @@
+@font-face {
+    font-family: 'MyriadPro-Regular';
+    src: url("fonts/Myriad Pro Regular.ttf") format('truetype');
+}
+
+html, body{
+    padding:0;
+    margin:0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+h1{
+    font-size: 35px;
+    font-family: "Tahoma";
+    font-weight: bold;
+    text-align: center;
+    margin: 50px 0;
+}
+h2{
+    font-size: 30px;
+    font-family: "Tahoma";
+    font-weight: bold;
+    text-align: center;
+    margin: 50px 0;
+}
+h3{
+    font-size: 25px;
+    font-family: "Tahoma";
+    font-weight: bold;
+    text-align: center;
+}
+p, li, b{
+    font-size: 25px;
+    font-family: "Garamond";
+    margin: 0;
+}
+hr{
+    background-color: #666666;
+    border: 0.5px solid #999999;
+}
+header{
+    background-color: #a67c52;
+}
+header .logo_menu_block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+header .logo_menu_block .logo{
+    width: 300px;
+}
+header ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+}
+header ul li{
+    padding: 10px 20px;
+}
+header ul li a{
+    color: white;
+    font-size: 25px;
+    font-family: "Garamond";
+}
+header ul li a:hover{
+    color: #F7931E;
+}
+header .navigation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+header .search_row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+header .search_button a{
+    color: white;
+    font-family: "MyriadPro-Regular";
+    font-size: 30px;
+    padding: 15px 40px;
+    border: 2px solid white;
+    background-color: #F7931E;
+}
+header .search_button a:hover, #catalog a:hover, #info a:hover{
+    color: #F7931E!important;
+    background-color: white!important;
+    border: 1px solid #F7931E!important;
+}
+#main_block{
+    padding: 30px;
+    background-color: #c7b299;
+}
+#main_block .about_class{
+    margin-bottom: 70px;
+}
+#main_block .about img{
+    width: 100%;
+}
+#main_block .about_text, #main_block .about_text_left{
+    padding-left: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+#main_block .about_text_left{
+    padding-left: 15px;
+}
+#catalog, #info{
+    background-color: #c7b299;
+}
+#catalog .item{
+    margin-bottom: 50px;
+}
+#catalog .item img{
+    width: 100%;
+}
+#catalog .item h2{
+    font-weight: normal;
+    margin: 10px 0;
+    text-align: left;
+}
+#catalog .item p{
+    margin-bottom: 30px;
+}
+#catalog .item  .p_border, #info .p_border{
+    text-align: center;
+    padding: 10px 0;
+    border: 1px solid black;
+}
+#catalog .item  .p_border p, #info .p_border p{
+    margin: 0;
+}
+#catalog .item .price, #catalog .item a{
+    font-family: "Tahoma";
+    margin: 20px 0;
+}
+#catalog .item .price{
+    font-size: 22px;
+}
+#catalog .item a, #info a{
+    padding: 10px 50px;
+    font-size: 25px;
+    background-color: #F7931E;
+    border: 1px solid black;
+}
+#info img{
+    width: 100%;
+}
+#info p{
+    margin: 10px 0;
+}
+#info a{
+    margin-top: 20px;
+}
+#info .payment img{
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+#info .payment .grey{
+    margin: 0;
+    color: #666666;
+}
+#info .payment p{
+    margin: 0;
+}
+#info .sm-images img{
+    height: 70px;
+    width: 130px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+#description{
+    background-color: #c7b299;
+}
+#description h2, #info h1{
+    text-align: left;
+    font-weight: normal;
+}
+#description h2{
+    margin-bottom: 10px;
+    font-family: "Garamond";
+}
+#description p{
+    text-indent: 4em;
+}
+#description .details{
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+#description .details p{
+    text-indent: 0;
+}
+footer{
+    padding-top: 70px;
+    background-color: #232323;
+    color: white;
+}
+footer .contact{
+    font-size: 25px;
+    font-family: "Tahoma";
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+footer h3{
+    margin-top: 0;
+}
+footer p{
+    margin-top: 80px;
+    margin-bottom: 50px;
+    font-size: 16px;
+    font-family: "Tahoma";
+    text-align: center;
+}
+footer .soc_icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+footer .soc_icons img{
+    width: 80px;
+}
+footer .soc_icons a{
+    margin: 0 20px;
+}
+footer .copyright p{
+    text-align: center;
+    margin: 30px 0;
+    line-height: 25px;
+}
+
+@media(max-width: 1366px){
+    header ul li{
+        padding: 10px 15px;
+    }
+    header ul li a{
+        font-size: 22px;
+    }
+    #main_block p{
+        font-size: 20px;
+    }
+    #catalog .item h2{
+        font-size: 22px;
+        text-align: center;
+    }
+    #catalog .item p, #catalog .item .price, #catalog .item a{
+        font-size: 20px;
+    }
+    #catalog .item .price{
+        font-size: 18px;
+    }
+    footer h3, footer .contact{
+        font-size: 20px;
+    }
+    footer .soc_icons img{
+        width: 60px;
+    }
+}
+@media(max-width: 1024px){
+    header .logo_menu_block{
+        flex-direction: column;
+        align-items: center;
+    }
+    #catalog .item p{
+        text-align: center;
+    }
+    #info h1{
+        font-size: 30px;
+    }
+    #info p, #description p, b, #description li, #info a{
+        font-size: 22px!important;
+    }
+
+}
+@media(max-width: 991px){
+    #main_block .reverse{
+        flex-direction: column-reverse;
+    }
+    #main_block .about_text, #main_block .about_text_left{
+        padding: 0;
+    }
+    #main_block .about_text p, #main_block .about_text_left p, #description h2, #info h2, #info h1{
+        text-align: center;
+    }
+
+    footer .contacts{
+        flex-direction: column;
+        align-items: center;
+    }
+    footer h3{
+        margin: 30px 0;
+    }
+    footer .contact{
+        padding: 0;
+    }
+}
+@media(max-width: 767px){
+    header .search_button a{
+        font-size: 22px;
+    }
+}
+@media(max-width: 600px){
+    header .search_button a{
+        font-size: 20px;
+        padding: 10px 15px;
+    }
+    header ul li a{
+        font-size: 20px;
+    }
+    header ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    #main_block h3{
+        font-size: 20px;
+    }
+    #main_block p, #description p, #info p, #description b, #description li, #info a{
+        font-size: 18px!important;
+    }
+    #description p{
+        text-indent: 0;
+    }
+}
+@media(max-width: 415px){
+    header .search_button a{
+        font-size: 15px;
+        padding: 10px;
+    }
+    header ul li a{
+        font-size: 20px;
+    }
+    #main_block h2{
+        font-size: 25px;
+    }
+    #main_block h3{
+        font-size: 18px;
+    }
+    #main_block p{
+        font-size: 16px;
+    }
+    #catalog .item .price{
+        font-size: 18px;
+    }
+    #catalog .item a, #info a {
+        padding: 10px 40px;
+    }
+    footer .soc_icons img{
+        width: 50px;
+    }
+
+}
