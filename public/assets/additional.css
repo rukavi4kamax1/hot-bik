@@ -38,3 +38,117 @@
 .admin_table_directory {
     text-decoration: underline;
 }
+.subdirectories {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.subdirectories a {
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid;
+    margin: 0px 5px;
+}
+.hotbike_tabs .tab {
+    width: 33.33333%;
+    background: #85613d;
+    color: whitesmoke;
+    padding: 30px;
+    font-size: 26px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #453629;
+    border-left: none;
+    border-radius: 15px 15px 0 0;
+}
+.hotbike_tabs .tab:first-child {
+    border-left: 1px solid #453629;
+}
+.hotbike_tabs .tab_active{
+    border-bottom: none;
+    background: #a67c52;
+}
+.tab_content {
+    flex-grow: 1;
+    background: #a67c52;
+    border: 1px solid #453629;
+    border-top: none;
+    padding: 30px;
+    color: whitesmoke;
+}
+.hidden {
+    display: none;
+}
+.hotbike_form {
+    display: flex;
+    flex-direction: column;
+}
+.hotbike_form input {
+    flex-grow: 1;
+}
+.field {
+    text-align: center;
+    padding: 5px;
+    margin: 5px 0;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+.field label {
+    margin-right: 15px;
+    border-bottom: 3px solid transparent;
+    padding: 5px;
+}
+.field input, .field select, .field textarea, .field button[type="button"], .field div {
+    flex-grow: 1;
+    padding: 10px;
+    background-color: #453629;
+    border: none;
+    border-bottom: 3px solid whitesmoke;
+    outline: none;
+    font-size: 18px;
+    color: whitesmoke;
+}
+.field option {
+    color: whitesmoke;
+    padding: 10px;
+    margin: 10px;
+}
+.field button[type="commit"] {
+    color: whitesmoke;
+    padding: 10px 35px;
+    margin: 10px 0;
+    font-size: 18px;
+    background-color: #232323;
+    outline: none;
+}
+.field button[type="button"] {
+    cursor: pointer;
+    padding: 10px 35px;
+}
+.field textarea {
+    flex-grow: 1;
+}
+.field div {
+    border-bottom: none;
+    background-color: transparent;
+}
+.table_creator {
+    display: flex;
+    flex-direction: column;
+}
+.table_creator .head {
+    text-align: left;
+    color: #cfcfcf;
+    margin-bottom: 15px;
+}
+.properties_table {
+    flex-grow: 1;
+}
+.properties_table input {
+    width: 100%;
+}
+.properties_table .properties_table_hrow {
+    text-align: left;
+    padding: 5px;
+}

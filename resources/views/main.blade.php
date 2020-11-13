@@ -23,7 +23,7 @@
                         <div class="navigation">
                             <ul>
                                 @foreach($categories as $category)
-                                    <li><a href="#">{{ $category->title }}</a></li>
+                                    <li><a href="{{ route("page", [ "id" => $category->id ]) }}">{{ $category->title }}</a></li>
                                 @endforeach
                             </ul>
                         </div>

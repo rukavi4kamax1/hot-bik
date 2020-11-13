@@ -32,12 +32,18 @@
                             <tbody>
                                 @foreach($pages as $page)
                                     <tr>
-                                        <td>{{$page->id}}</td>
                                         <td>
-                                            @if(!$page->is_container)
-                                                {{$page->title}}
+                                            @if($page->is_alias)
+                                                <span style="font-style: italic;">*{{$page->id}}</span>
                                             @else
+                                                {{$page->id}}
+                                            @endif
+                                        </td>
+                                        <td>
+                                            @if($page->is_container)
                                                 <a class="admin_table_directory" href="{{ route("admin_page", ["id" => $page->id]) }}">{{$page->title}}</a>
+                                            @else
+                                                {{$page->title}}
                                             @endif
                                         </td>
                                         <td width="50%">
@@ -47,9 +53,14 @@
                                         </td>
                                         <td>{{$page->created}}</td>
                                         <td>{{$page->updated}}</td>
-                                        <td><i class="fas fa-eye"></i></td>
-                                        <td><i class="fas fa-pencil-alt"></i></td>
-                                        <td><i class="fas fa-trash-alt"></i></td>
+                                        <td><a href="{{ route("page", [ "id" => $page->id ]) }}"><i class="fas fa-eye"></i></a></td>
+                                        @if($page->is_alias)
+                                            <td><a href="{{ route("update", [ "id" => $page->alias_id ]) }}"><i class="fas fa-pencil-alt"></i></a></td>
+                                            <td><a href="{{ route("rm_content", ["id" => $page->alias_id, "pid" => $dir_id]) }}"><i class="fas fa-trash-alt"></i></a></td>
+                                        @else
+                                            <td><a href="{{ route("update", [ "id" => $page->id ]) }}"><i class="fas fa-pencil-alt"></i></a></td>
+                                            <td><a href="{{ route("rm_content", ["id" => $page->id, "pid" => $dir_id]) }}"><i class="fas fa-trash-alt"></i></a></td>
+                                        @endif
                                     </tr>
                                 @endforeach
                             </tbody>
